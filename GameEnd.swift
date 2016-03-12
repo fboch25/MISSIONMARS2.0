@@ -19,7 +19,8 @@ class GameEnd: CCNode {
     weak var storeButton: CCButton!
     let defaults = NSUserDefaults.standardUserDefaults()
     
-    
+
+    // Save Highscore in Game Center 
     func saveHighScore(score : Int) {
         pointsLabel.string = "\(score)"
         if GKLocalPlayer.localPlayer().authenticated {

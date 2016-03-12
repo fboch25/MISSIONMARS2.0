@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>11</integer>
+	<integer>14</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -146,8 +146,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.14585284888744354</real>
-							<real>1.1086753606796265</real>
+							<real>0.14848911762237549</real>
+							<real>0.90504723787307739</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -341,7 +341,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>360</real>
+						<real>156</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -498,7 +498,7 @@
 						<key>value</key>
 						<array>
 							<real>0.84531247615814209</real>
-							<real>1.0537772178649902</real>
+							<real>-0.04065341129899025</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -572,8 +572,6 @@
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -667,7 +665,7 @@
 						<key>value</key>
 						<array>
 							<real>0.84531247615814209</real>
-							<real>-0.040253311395645142</real>
+							<real>0.094104401767253876</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1633,8 +1631,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.14585283398628235</real>
-							<real>-0.040253311395645142</real>
+							<real>0.14585284888744354</real>
+							<real>1.040258526802063</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1859,7 +1857,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>2</real>
+			<real>0.86666667461395264</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

@@ -62,7 +62,7 @@
 			<key>collisionType</key>
 			<string>Ufoship</string>
 			<key>cornerRadius</key>
-			<real>22.809999465942383</real>
+			<real>22.80859375</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
@@ -137,7 +137,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>ufo/ufoRed.png</string>
+					<string>ufo/ufoGreen.png</string>
 				</array>
 			</dict>
 			<dict>

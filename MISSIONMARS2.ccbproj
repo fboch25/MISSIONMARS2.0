@@ -162,6 +162,11 @@
 			<key>tabletScale</key>
 			<integer>1</integer>
 		</dict>
+		<key>ufo/Mission Mars Soundtrack.wav</key>
+		<dict>
+			<key>format_ios_sound</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>versionStr</key>
 	<string>revision : eea568a5c7

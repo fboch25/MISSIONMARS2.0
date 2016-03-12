@@ -98,6 +98,7 @@
 		FC0DEC261C8A8ACF009CA715 /* Ufo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0DEC251C8A8ACF009CA715 /* Ufo.swift */; };
 		FC3F966E1C8F3B090014BC76 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F966D1C8F3B090014BC76 /* StartScreen.swift */; };
 		FC3F968E1C8FAF310014BC76 /* Laser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F968D1C8FAF310014BC76 /* Laser.swift */; };
+		FC3F96A51C923E090014BC76 /* Mission Mars Soundtrack.wav in Resources */ = {isa = PBXBuildFile; fileRef = FC3F96A41C923E090014BC76 /* Mission Mars Soundtrack.wav */; };
 		FCD331B11C8E61BE00FC24F7 /* GameCenterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD331B01C8E61BE00FC24F7 /* GameCenterInteractor.swift */; };
 		FCD331D31C8EA34A00FC24F7 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD331D21C8EA34A00FC24F7 /* GameKit.framework */; };
 		FCD331D51C8EA36C00FC24F7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD331D41C8EA36C00FC24F7 /* StoreKit.framework */; };
@@ -225,6 +226,7 @@
 		FC0DEC251C8A8ACF009CA715 /* Ufo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ufo.swift; sourceTree = "<group>"; };
 		FC3F966D1C8F3B090014BC76 /* StartScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
 		FC3F968D1C8FAF310014BC76 /* Laser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Laser.swift; sourceTree = "<group>"; };
+		FC3F96A41C923E090014BC76 /* Mission Mars Soundtrack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Mission Mars Soundtrack.wav"; path = "../../Desktop/Mission Mars Soundtrack.wav"; sourceTree = "<group>"; };
 		FCD331B01C8E61BE00FC24F7 /* GameCenterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCenterInteractor.swift; sourceTree = "<group>"; };
 		FCD331D21C8EA34A00FC24F7 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		FCD331D41C8EA36C00FC24F7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -463,6 +465,7 @@
 				FC0D77721C8B8CD8002EB3DA /* GameEnd.swift */,
 				FC0DEC251C8A8ACF009CA715 /* Ufo.swift */,
 				FC0DEC111C89EC60009CA715 /* Ship.swift */,
+				FC3F96A31C923DCA0014BC76 /* Audio */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
 			name = Source;
@@ -563,6 +566,14 @@
 				B73789861807631A0076A88C /* Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC3F96A31C923DCA0014BC76 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F96A41C923E090014BC76 /* Mission Mars Soundtrack.wav */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -771,6 +782,7 @@
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
+				FC3F96A51C923E090014BC76 /* Mission Mars Soundtrack.wav in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,

@@ -11,4 +11,8 @@ import Foundation
 class Ship: CCSprite {
     
     
+    func explosion() {
+        visible = false
+        physicsBody.sensor = true
+    }
 }
