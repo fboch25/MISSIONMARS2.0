@@ -22,7 +22,17 @@ class GameEnd: CCNode {
 
     // Save Highscore in Game Center 
     func saveHighScore(score : Int) {
+        var currentHighscore = defaults.integerForKey("highScore")
+        if score > currentHighscore {
+            defaults.setInteger(score, forKey: "highScore")
+        }
+        currentHighscore = defaults.integerForKey("highScore")
+
+        if score < currentHighscore {
         pointsLabel.string = "\(score)"
+        } else {
+            pointsLabel.string = "\(currentHighscore)"
+        }
         if GKLocalPlayer.localPlayer().authenticated {
             let scoreReporter = GKScore(leaderboardIdentifier: "MissionMars2SinglePlayerLeaderBoard")
             scoreReporter.value = Int64(score)
@@ -34,11 +44,7 @@ class GameEnd: CCNode {
                 }
             } ) )
         }
-        let currentHighscore = defaults.integerForKey("highScore")
         
-        if score > currentHighscore {
-            defaults.setInteger(score, forKey: "highScore")
-        }
         
         highPointsLabel.string = "\(currentHighscore)"
         
