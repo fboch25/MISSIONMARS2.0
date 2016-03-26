@@ -19,7 +19,7 @@ class StartScreen: CCScene {
     func didLoadFromCCB(){
         setUpGameCenter()
         userInteractionEnabled = true
-        audio.playBg("Mission Mars Soundtrack.wav", loop: true)
+        //audio.playBg("Mission Mars Soundtrack.wav", loop: true)
     }
     func play(){
         let scene = CCBReader.loadAsScene("MainScene")
