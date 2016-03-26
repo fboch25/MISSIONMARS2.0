@@ -63,7 +63,6 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
             }
             if score == 90 {
                 schedule("spawnUfo2", interval: 0.8)
-                
             }
             if score == 110 {
                 schedule("spawnUfo4", interval: 0.3)
@@ -195,7 +194,6 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
             let moveBack = CCActionEaseBounceOut(action: move.reverse())
             let shakeSequence = CCActionSequence(array: [move, moveBack])
             runAction(shakeSequence)
-            
         }
     }
 }
