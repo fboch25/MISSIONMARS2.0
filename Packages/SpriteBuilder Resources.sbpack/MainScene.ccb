@@ -207,7 +207,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-312</real>
+									<real>-320.25390625</real>
 									<real>0.0</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -371,7 +371,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>309</real>
+									<real>320</real>
 									<real>0.0</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1110,7 +1110,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>MOVE THE SHIP LEFT AND RIGHT </string>
+							<string>DRAG THE SHIP LEFT AND RIGHT </string>
 							<false/>
 						</array>
 					</dict>

@@ -17,7 +17,7 @@ class StartScreen: CCScene {
     let audio = OALSimpleAudio.sharedInstance()
     
     func didLoadFromCCB(){
-       // setUpGameCenter()
+        setUpGameCenter()
         userInteractionEnabled = true
         audio.playBg("Mission Mars Soundtrack.wav", loop: true)
     }
