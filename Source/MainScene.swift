@@ -13,7 +13,8 @@ import AudioToolbox
 
 
 class MainScene: CCNode, CCPhysicsCollisionDelegate {
-    
+    let view: UIViewController = CCDirector.sharedDirector().parentViewController! // Returns a UIView of the cocos2d view controller.var startAppAd: STAStartAppAd?
+    var startAppAd: STAStartAppAd?
     // Game Phyiscs Node
     weak var gamePhysicsNode: CCPhysicsNode!
     weak var gameEndScreen: GameEnd!
@@ -48,8 +49,7 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
     // Defaults
     let defaults = NSUserDefaults.standardUserDefaults()
     // Advertisements
-    var startAppBanner: STABannerView?
-    let view = CCDirector.sharedDirector().parentViewController!.view
+    
     
     
     var score: Int = 0 {
@@ -125,7 +125,8 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
     }
     
     func didLoadFromCCB(){
-        
+        startAppAd = STAStartAppAd()
+        startAppAd!.loadAd()
         userInteractionEnabled = true
         gamePhysicsNode.collisionDelegate = self
         
@@ -133,13 +134,7 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
             gameEndScreen.visible = false
         }
     }
-    // Advertisements
-    func viewDidAppear(animated: Bool) {
-        if (startAppBanner == nil) {
-            startAppBanner = STABannerView(size: STA_AutoAdSize, autoOrigin: STAAdOrigin_Bottom, withView: self.view, withDelegate: nil);
-            self.view.addSubview(startAppBanner!)
-        }
-    }
+  
    
     func startGame(){
         schedule("spawnUfo", interval: 0.5)
@@ -217,15 +212,20 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
         return true
     }
     // Collision ship and ufo
-//    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, ship nodeA: CCNode!, Ufoship nodeB: CCNode!) -> ObjCBool {
-//        if (gameOver  == false) {
-//            triggerGameOver()
-//        }
-//        return true
-//    }
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, ship nodeA: CCNode!, Ufoship nodeB: CCNode!) -> ObjCBool {
+        if (gameOver  == false) {
+            triggerGameOver()
+        }
+        return true
+    }
     // Gameover
     func triggerGameOver() {
         print("gameover")
+        if CCRANDOM_0_1() <= 0.25 {
+            startAppAd!.showAd()
+        }
+        print(startAppAd)
+        
         if (gameOver  == false) {
             
             userInteractionEnabled = false
