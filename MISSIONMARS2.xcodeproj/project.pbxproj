@@ -97,7 +97,6 @@
 		FC0D77731C8B8CD8002EB3DA /* GameEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D77721C8B8CD8002EB3DA /* GameEnd.swift */; };
 		FC0DEC121C89EC60009CA715 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0DEC111C89EC60009CA715 /* Ship.swift */; };
 		FC0DEC261C8A8ACF009CA715 /* Ufo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0DEC251C8A8ACF009CA715 /* Ufo.swift */; };
-		FC199B741CA65BDD00500B1C /* Mission Mars Soundtrack.wav in Resources */ = {isa = PBXBuildFile; fileRef = FC199B731CA65BDD00500B1C /* Mission Mars Soundtrack.wav */; };
 		FC3F966E1C8F3B090014BC76 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F966D1C8F3B090014BC76 /* StartScreen.swift */; };
 		FC3F968E1C8FAF310014BC76 /* Laser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F968D1C8FAF310014BC76 /* Laser.swift */; };
 		FCD331B11C8E61BE00FC24F7 /* GameCenterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD331B01C8E61BE00FC24F7 /* GameCenterInteractor.swift */; };
@@ -114,7 +113,6 @@
 		FCF2CD7B1CB1D65D00FF9446 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD7A1CB1D65D00FF9446 /* SystemConfiguration.framework */; };
 		FCF2CD851CB86F9200FF9446 /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FCF2CD841CB86F9200FF9446 /* StartApp.bundle */; };
 		FCF2CD871CB86FA800FF9446 /* StartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD861CB86FA800FF9446 /* StartApp.framework */; };
-		FCF2CD8C1CB8829000FF9446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2CD8B1CB8829000FF9446 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,7 +235,6 @@
 		FC0D77721C8B8CD8002EB3DA /* GameEnd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEnd.swift; sourceTree = "<group>"; };
 		FC0DEC111C89EC60009CA715 /* Ship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		FC0DEC251C8A8ACF009CA715 /* Ufo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ufo.swift; sourceTree = "<group>"; };
-		FC199B731CA65BDD00500B1C /* Mission Mars Soundtrack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Mission Mars Soundtrack.wav"; path = "../../Desktop/Mission Mars Soundtrack.wav"; sourceTree = "<group>"; };
 		FC3F966D1C8F3B090014BC76 /* StartScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
 		FC3F968D1C8FAF310014BC76 /* Laser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Laser.swift; sourceTree = "<group>"; };
 		FCD331B01C8E61BE00FC24F7 /* GameCenterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCenterInteractor.swift; sourceTree = "<group>"; };
@@ -254,7 +251,6 @@
 		FCF2CD7A1CB1D65D00FF9446 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FCF2CD841CB86F9200FF9446 /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
 		FCF2CD861CB86FA800FF9446 /* StartApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StartApp.framework; sourceTree = "<group>"; };
-		FCF2CD8B1CB8829000FF9446 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -492,7 +488,6 @@
 				075018E31CA655A5009AEDF3 /* Media.xcassets */,
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
-				FCF2CD8B1CB8829000FF9446 /* AppDelegate.swift */,
 				FC3F968D1C8FAF310014BC76 /* Laser.swift */,
 				FCD331B01C8E61BE00FC24F7 /* GameCenterInteractor.swift */,
 				FCD331DC1C8EA51C00FC24F7 /* Store.swift */,
@@ -616,7 +611,6 @@
 		FC3F96A31C923DCA0014BC76 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				FC199B731CA65BDD00500B1C /* Mission Mars Soundtrack.wav */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -833,7 +827,6 @@
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				FCF2CD851CB86F9200FF9446 /* StartApp.bundle in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
-				FC199B741CA65BDD00500B1C /* Mission Mars Soundtrack.wav in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -908,7 +901,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCF2CD8C1CB8829000FF9446 /* AppDelegate.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				FC0DEC121C89EC60009CA715 /* Ship.swift in Sources */,
 				FC3F966E1C8F3B090014BC76 /* StartScreen.swift in Sources */,
