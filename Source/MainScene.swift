@@ -11,21 +11,29 @@ import AVFoundation
 import GameKit
 import AudioToolbox
 
+
 class MainScene: CCNode, CCPhysicsCollisionDelegate {
     
     // Game Phyiscs Node
     weak var gamePhysicsNode: CCPhysicsNode!
     weak var gameEndScreen: GameEnd!
     weak var colorNode: CCNode!
+    weak var redBackground: CCNode!
+    weak var blueBackground: CCNode!
+    weak var seaFoamBackground: CCNode!
+    weak var steelBackground: CCNode!
     // Ships
     weak var hero: Ship!
     weak var enemy: Ufo!
     weak var enemy2: Ufo!
     weak var enemy3: Ufo!
     weak var enemy4: Ufo!
+    weak var warningAlert: CCSprite!
+    weak var warningAlert1: CCSprite!
     // Label
     weak var scoreLabel: CCLabelTTF!
     weak var holdToMove: CCLabelTTF!
+    weak var warningLabel: CCLabelTTF!
     // Particles for Explosion 
     weak var explosion: CCParticleSystem!
     // touch/screen
@@ -39,6 +47,10 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
     let audio = OALSimpleAudio.sharedInstance()
     // Defaults
     let defaults = NSUserDefaults.standardUserDefaults()
+    // Advertisements
+    var startAppBanner: STABannerView?
+    let view = CCDirector.sharedDirector().parentViewController!.view
+    
     
     var score: Int = 0 {
         didSet {
@@ -46,32 +58,74 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
             
             if score == 3 {
                 if gameOver == false {
-                schedule("spawnUfo2", interval: 3)
+                schedule("spawnUfo2", interval: 0.9)
                 }
             }
-            if score == 8 {
-                schedule("spawnUfo3", interval: 8)
+            if score == 15 {
+                hero.zOrder = +1
+                blueBackground.visible = true
+                schedule("spawnUfo3", interval: 1.5)
             }
             if score == 50 {
+                hero.zOrder = +1
+                redBackground.visible = true
                 schedule("spawnUfo4", interval: 0.5)
                 unschedule("spawnUfo")
                 unschedule("spawnUfo2")
                 unschedule("spawnUfo3")
             }
             if score == 75 {
-                schedule("spawnUfo3", interval: 2)
+                hero.zOrder = +1
+                seaFoamBackground.visible = true
+                schedule("spawnUfo3", interval: 0.7)
             }
             if score == 90 {
-                schedule("spawnUfo2", interval: 0.8)
+                schedule("spawnUfo2", interval: 0.5)
+                unschedule("spawnUfo4")
             }
-            if score == 110 {
+            if score == 150 {
+                hero.zOrder = +1
+                steelBackground.visible = true
+                schedule("spawnUfo", interval: 0.3)
+                    }
+            if score == 200 {
+                hero.zOrder = +1
+                blueBackground.visible = true
+                schedule("spawnUfo4", interval: 0.4)
+                unschedule("spawnUfo3")
+                unschedule("spawnUfo2")
+                unschedule("spawnUfo")
+                
+            }
+            if score == 275 {
+                hero.zOrder = +1
+                redBackground.visible = true
+                schedule("spawnUfo", interval: 0.9)
+            }
+            if score == 300 {
+                hero.zOrder = +1
+                seaFoamBackground.visible = true
+                unschedule("spawnUfo4")
+                schedule("spawnUfo2", interval: 1.1)
+                schedule("spawnUfo3", interval: 1.2)
+            }
+            if score == 350 {
+                hero.zOrder = +1
+                steelBackground.visible = true
+            }
+            if score == 400 {
                 schedule("spawnUfo4", interval: 0.3)
-                schedule("spawnUfo3", interval: 1)
+                unschedule("spawnUfo")
+                unschedule("spawnUfo2")
+                unschedule("spawnUfo3")
+                hero.zOrder = +1
+                blueBackground.visible = true
+                }
             }
-        }
     }
     
     func didLoadFromCCB(){
+        
         userInteractionEnabled = true
         gamePhysicsNode.collisionDelegate = self
         
@@ -79,9 +133,19 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
             gameEndScreen.visible = false
         }
     }
-    
+    // Advertisements
+    func viewDidAppear(animated: Bool) {
+        if (startAppBanner == nil) {
+            startAppBanner = STABannerView(size: STA_AutoAdSize, autoOrigin: STAAdOrigin_Bottom, withView: self.view, withDelegate: nil);
+            self.view.addSubview(startAppBanner!)
+        }
+    }
+   
     func startGame(){
-        schedule("spawnUfo", interval: 0.7)
+        schedule("spawnUfo", interval: 0.5)
+        warningAlert.visible = false
+        warningAlert1.visible = false
+        warningLabel.visible = false
     }
     
     // touches
@@ -97,7 +161,6 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
         hero.position.x = CGFloat(clampf(Float(hero.position.x - (currentTouchLocation.x - touch.locationInWorld().x)),Float(0.0), Float(screenWidth)))
         currentTouchLocation = touch.locationInWorld()
     }
-    
     // spawn Blue Ufo
     func spawnUfo() {
         let enemy = CCBReader.load("ufo") as! Ufo
@@ -154,12 +217,12 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
         return true
     }
     // Collision ship and ufo
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, ship nodeA: CCNode!, Ufoship nodeB: CCNode!) -> ObjCBool {
-        if (gameOver  == false) {
-            triggerGameOver()
-        }
-        return true
-    }
+//    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, ship nodeA: CCNode!, Ufoship nodeB: CCNode!) -> ObjCBool {
+//        if (gameOver  == false) {
+//            triggerGameOver()
+//        }
+//        return true
+//    }
     // Gameover
     func triggerGameOver() {
         print("gameover")
@@ -173,16 +236,23 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
             gameEndScreen.visible = true
             scoreLabel.visible = false
             hero.opacity = 0
+            warningAlert.visible = false
+            warningAlert1.visible = false
+            warningLabel.visible = false
          
             // GamoverTimeline
             if animationManager.runningSequenceName != "Gameover Timeline" {
+                warningAlert.visible = false
+                warningAlert1.visible = false
+                warningLabel.visible = false
                 animationManager.runAnimationsForSequenceNamed("Gameover Timeline")
                 gameEndScreen.saveHighScore(score)
+
             }
             
             // Explosion Particle Effect
             let explosion = CCBReader.load("Explosion")
-            explosion.zOrder = -1
+            explosion.zOrder = +1
             explosion.position = hero.positionInPoints
             hero.explosion()
             addChild(explosion)

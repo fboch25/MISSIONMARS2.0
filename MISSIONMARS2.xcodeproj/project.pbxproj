@@ -97,12 +97,24 @@
 		FC0D77731C8B8CD8002EB3DA /* GameEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D77721C8B8CD8002EB3DA /* GameEnd.swift */; };
 		FC0DEC121C89EC60009CA715 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0DEC111C89EC60009CA715 /* Ship.swift */; };
 		FC0DEC261C8A8ACF009CA715 /* Ufo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0DEC251C8A8ACF009CA715 /* Ufo.swift */; };
+		FC199B741CA65BDD00500B1C /* Mission Mars Soundtrack.wav in Resources */ = {isa = PBXBuildFile; fileRef = FC199B731CA65BDD00500B1C /* Mission Mars Soundtrack.wav */; };
 		FC3F966E1C8F3B090014BC76 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F966D1C8F3B090014BC76 /* StartScreen.swift */; };
 		FC3F968E1C8FAF310014BC76 /* Laser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F968D1C8FAF310014BC76 /* Laser.swift */; };
 		FCD331B11C8E61BE00FC24F7 /* GameCenterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD331B01C8E61BE00FC24F7 /* GameCenterInteractor.swift */; };
 		FCD331D31C8EA34A00FC24F7 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD331D21C8EA34A00FC24F7 /* GameKit.framework */; };
 		FCD331D51C8EA36C00FC24F7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD331D41C8EA36C00FC24F7 /* StoreKit.framework */; };
 		FCD331DD1C8EA51C00FC24F7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD331DC1C8EA51C00FC24F7 /* Store.swift */; };
+		FCF2CD6D1CB1D5DA00FF9446 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD6C1CB1D5DA00FF9446 /* AdSupport.framework */; };
+		FCF2CD6F1CB1D5F600FF9446 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD6E1CB1D5F600FF9446 /* CoreMedia.framework */; };
+		FCF2CD711CB1D60A00FF9446 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD701CB1D60A00FF9446 /* CoreTelephony.framework */; };
+		FCF2CD731CB1D62600FF9446 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD721CB1D62600FF9446 /* EventKit.framework */; };
+		FCF2CD751CB1D62E00FF9446 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD741CB1D62E00FF9446 /* EventKitUI.framework */; };
+		FCF2CD771CB1D63900FF9446 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD761CB1D63900FF9446 /* MediaPlayer.framework */; };
+		FCF2CD791CB1D64600FF9446 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD781CB1D64600FF9446 /* MessageUI.framework */; };
+		FCF2CD7B1CB1D65D00FF9446 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD7A1CB1D65D00FF9446 /* SystemConfiguration.framework */; };
+		FCF2CD851CB86F9200FF9446 /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FCF2CD841CB86F9200FF9446 /* StartApp.bundle */; };
+		FCF2CD871CB86FA800FF9446 /* StartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2CD861CB86FA800FF9446 /* StartApp.framework */; };
+		FCF2CD8C1CB8829000FF9446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2CD8B1CB8829000FF9446 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,12 +237,24 @@
 		FC0D77721C8B8CD8002EB3DA /* GameEnd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEnd.swift; sourceTree = "<group>"; };
 		FC0DEC111C89EC60009CA715 /* Ship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		FC0DEC251C8A8ACF009CA715 /* Ufo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ufo.swift; sourceTree = "<group>"; };
+		FC199B731CA65BDD00500B1C /* Mission Mars Soundtrack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Mission Mars Soundtrack.wav"; path = "../../Desktop/Mission Mars Soundtrack.wav"; sourceTree = "<group>"; };
 		FC3F966D1C8F3B090014BC76 /* StartScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
 		FC3F968D1C8FAF310014BC76 /* Laser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Laser.swift; sourceTree = "<group>"; };
 		FCD331B01C8E61BE00FC24F7 /* GameCenterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCenterInteractor.swift; sourceTree = "<group>"; };
 		FCD331D21C8EA34A00FC24F7 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		FCD331D41C8EA36C00FC24F7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FCD331DC1C8EA51C00FC24F7 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		FCF2CD6C1CB1D5DA00FF9446 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FCF2CD6E1CB1D5F600FF9446 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FCF2CD701CB1D60A00FF9446 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		FCF2CD721CB1D62600FF9446 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		FCF2CD741CB1D62E00FF9446 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		FCF2CD761CB1D63900FF9446 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		FCF2CD781CB1D64600FF9446 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		FCF2CD7A1CB1D65D00FF9446 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FCF2CD841CB86F9200FF9446 /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
+		FCF2CD861CB86FA800FF9446 /* StartApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StartApp.framework; sourceTree = "<group>"; };
+		FCF2CD8B1CB8829000FF9446 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,11 +298,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */,
+				FCF2CD871CB86FA800FF9446 /* StartApp.framework in Frameworks */,
+				FCF2CD7B1CB1D65D00FF9446 /* SystemConfiguration.framework in Frameworks */,
+				FCF2CD791CB1D64600FF9446 /* MessageUI.framework in Frameworks */,
+				FCF2CD771CB1D63900FF9446 /* MediaPlayer.framework in Frameworks */,
+				FCF2CD751CB1D62E00FF9446 /* EventKitUI.framework in Frameworks */,
+				FCF2CD731CB1D62600FF9446 /* EventKit.framework in Frameworks */,
+				FCF2CD711CB1D60A00FF9446 /* CoreTelephony.framework in Frameworks */,
+				FCF2CD6F1CB1D5F600FF9446 /* CoreMedia.framework in Frameworks */,
+				FCF2CD6D1CB1D5DA00FF9446 /* AdSupport.framework in Frameworks */,
 				FCD331D51C8EA36C00FC24F7 /* StoreKit.framework in Frameworks */,
 				FCD331D31C8EA34A00FC24F7 /* GameKit.framework in Frameworks */,
 				7A97911819E631CD001FFC4D /* libcocos2d.a in Frameworks */,
 				8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */,
-				B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */,
 				B77F1B3417B978D7009739AE /* OpenGLES.framework in Frameworks */,
 				B77F1B3617B978D7009739AE /* OpenAL.framework in Frameworks */,
 				B77F1B3817B978D7009739AE /* AudioToolbox.framework in Frameworks */,
@@ -459,6 +492,7 @@
 				075018E31CA655A5009AEDF3 /* Media.xcassets */,
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
+				FCF2CD8B1CB8829000FF9446 /* AppDelegate.swift */,
 				FC3F968D1C8FAF310014BC76 /* Laser.swift */,
 				FCD331B01C8E61BE00FC24F7 /* GameCenterInteractor.swift */,
 				FCD331DC1C8EA51C00FC24F7 /* Store.swift */,
@@ -466,8 +500,6 @@
 				FC0D77721C8B8CD8002EB3DA /* GameEnd.swift */,
 				FC0DEC251C8A8ACF009CA715 /* Ufo.swift */,
 				FC0DEC111C89EC60009CA715 /* Ship.swift */,
-				FC3F96A31C923DCA0014BC76 /* Audio */,
-				D352B48019EC608A00829775 /* MetalShaders */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -496,12 +528,16 @@
 		B77F1B2517B978D7009739AE = {
 			isa = PBXGroup;
 			children = (
+				FCF2CD861CB86FA800FF9446 /* StartApp.framework */,
+				FCF2CD841CB86F9200FF9446 /* StartApp.bundle */,
 				B737893C1807616C0076A88C /* Source */,
+				FC3F96A31C923DCA0014BC76 /* Audio */,
 				B77F1B4617B978D7009739AE /* Resources */,
 				9222E2B918734FF800A246C7 /* libs */,
 				B77F1CCF17B978D8009739AE /* Supporting Files */,
 				B77F1B3017B978D7009739AE /* Frameworks */,
 				B77F1B2F17B978D7009739AE /* Products */,
+				D352B48019EC608A00829775 /* MetalShaders */,
 			);
 			sourceTree = "<group>";
 		};
@@ -518,6 +554,14 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCF2CD7A1CB1D65D00FF9446 /* SystemConfiguration.framework */,
+				FCF2CD781CB1D64600FF9446 /* MessageUI.framework */,
+				FCF2CD761CB1D63900FF9446 /* MediaPlayer.framework */,
+				FCF2CD741CB1D62E00FF9446 /* EventKitUI.framework */,
+				FCF2CD721CB1D62600FF9446 /* EventKit.framework */,
+				FCF2CD701CB1D60A00FF9446 /* CoreTelephony.framework */,
+				FCF2CD6E1CB1D5F600FF9446 /* CoreMedia.framework */,
+				FCF2CD6C1CB1D5DA00FF9446 /* AdSupport.framework */,
 				FCD331D41C8EA36C00FC24F7 /* StoreKit.framework */,
 				FCD331D21C8EA34A00FC24F7 /* GameKit.framework */,
 				BC5399D31A44DCC90063F482 /* AndroidKit.framework */,
@@ -530,8 +574,8 @@
 				7A59493A19E37F9300F65F90 /* OpenGL.framework */,
 				7A4036F419DE3FA8007B6E8F /* AppKit.framework */,
 				5B12100919748273004C1E1D /* libEGL.so */,
-				8392007918EE8E3300B6C429 /* GLKit.framework */,
 				B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */,
+				8392007918EE8E3300B6C429 /* GLKit.framework */,
 				B77F1B3117B978D7009739AE /* QuartzCore.framework */,
 				B77F1B3317B978D7009739AE /* OpenGLES.framework */,
 				B77F1B3517B978D7009739AE /* OpenAL.framework */,
@@ -572,6 +616,7 @@
 		FC3F96A31C923DCA0014BC76 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				FC199B731CA65BDD00500B1C /* Mission Mars Soundtrack.wav */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -786,7 +831,9 @@
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
+				FCF2CD851CB86F9200FF9446 /* StartApp.bundle in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
+				FC199B741CA65BDD00500B1C /* Mission Mars Soundtrack.wav in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -861,6 +908,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF2CD8C1CB8829000FF9446 /* AppDelegate.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				FC0DEC121C89EC60009CA715 /* Ship.swift in Sources */,
 				FC3F966E1C8F3B090014BC76 /* StartScreen.swift in Sources */,
@@ -1164,9 +1212,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Frank Boccia (LM2J977ASP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Frank Boccia (LM2J977ASP)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
@@ -1203,9 +1255,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Frank Boccia (LM2J977ASP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Frank Boccia (LM2J977ASP)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
 				HEADER_SEARCH_PATHS = (

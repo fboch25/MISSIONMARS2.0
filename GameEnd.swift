@@ -15,6 +15,7 @@ class GameEnd: CCNode {
     weak var pointsLabel: CCLabelTTF!
     weak var highPointsLabel: CCLabelTTF!
     weak var homeButton: CCButton!
+    weak var settingsButton: CCButton!
     weak var leaderBoardButton: CCButton!
     weak var storeButton: CCButton!
     let defaults = NSUserDefaults.standardUserDefaults()
@@ -44,10 +45,7 @@ class GameEnd: CCNode {
                 }
             } ) )
         }
-        
-        
         highPointsLabel.string = "\(currentHighscore)"
-        
     }
     
     // restart Game
@@ -55,6 +53,7 @@ class GameEnd: CCNode {
         let scene = CCBReader.loadAsScene("MainScene")
         CCDirector.sharedDirector().presentScene(scene)
     }
+    // store
     func store(){
         let scene = CCBReader.loadAsScene("Store")
         CCDirector.sharedDirector().presentScene(scene)
